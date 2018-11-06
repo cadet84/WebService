@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-public class SignUpServlet extends HttpServlet {
+public class UsersServlet extends HttpServlet {
 
     public void doPost (HttpServletRequest request, HttpServletResponse response)throws IOException, ServletException {
 
