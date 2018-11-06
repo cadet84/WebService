@@ -39,7 +39,7 @@ public class SessionsServlet extends HttpServlet {
         String login =request.getParameter("login");
         String password = request.getParameter("password");
 
-        if(login.isEmpty() || password.isEmpty()){
+        if(login==null || password==null){
             response.setContentType("text/html; charset=utf-8");
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
