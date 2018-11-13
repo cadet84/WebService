@@ -14,7 +14,7 @@ public class SignInServlet extends HttpServlet {
     public void doPost (HttpServletRequest request, HttpServletResponse response){
         String login = request.getParameter("login");
         String password = request.getParameter("password");
-        UserProfile profile= new UserProfile(login, password,login+"@ukr.net");
+        UserProfile profile= new UserProfile(login);
 
         if(login==null || password==null){
             response.setContentType("text/html; charset=utf-8");
